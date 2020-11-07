@@ -18,12 +18,11 @@ const randomIntegerFromInterval = (min, max) => {
 startButton.addEventListener('click', setStart);
 
 function setStart(event) {
-    setTimeout(() => {
+    setInterval(() => {
         const currentColor = randomIntegerFromInterval(0, colors.length - 1);
         document.body.style.background = colors[currentColor];
     }, 1000);
-    
-    
 }
+
 
 console.log(colors[randomIntegerFromInterval(0, colors.length-1)]);
