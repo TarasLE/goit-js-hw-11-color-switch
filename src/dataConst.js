@@ -8,3 +8,7 @@ export const colors = [
   '#009688',
   '#795548',
 ];
+
+export const randomIntegerFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
