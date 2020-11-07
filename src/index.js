@@ -27,6 +27,8 @@ function setStart(event) {
         const currentColor = randomIntegerFromInterval(0, colors.length - 1);
         document.body.style.background = colors[currentColor];
     }, 1000);
+
+    console.log("AFTER INTERVAL");
 }
 
 function setStop(event) {
