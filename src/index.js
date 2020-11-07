@@ -20,10 +20,8 @@ stopButton.addEventListener('click', setStop);
 let timerId
 
 function setStart(event) {
-    if (startPosition) {
-        startButton.removeEventListener('click', setStart);
-        startPosition = false;
-    }
+    startButton.removeEventListener('click', setStart);
+        
     
     timerId =  setInterval(() => {
         const currentColor = randomIntegerFromInterval(0, colors.length - 1);
