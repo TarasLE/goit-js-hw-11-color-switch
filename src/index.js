@@ -25,4 +25,8 @@ function setStart(event) {
 }
 
 
-console.log(colors[randomIntegerFromInterval(0, colors.length-1)]);
+console.log(colors[randomIntegerFromInterval(0, colors.length - 1)]);
+
+setInterval(() => {
+        console.log("test interval");
+    }, 1000);
