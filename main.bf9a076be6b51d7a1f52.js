@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QfWi:function(o,t,n){"use strict";n.r(t);var e=document.querySelector('button[data-action="start"]'),a=(document.querySelector('button[data-action="stop"]'),["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"]);console.log(a);var c,r;e.addEventListener("click",(function(o){})),console.log(a[(c=0,r=a.length-1,Math.floor(Math.random()*(r-c+1)+c))])}},[["QfWi",1]]]);
-//# sourceMappingURL=main.bf9a076be6b51d7a1f52.js.map
