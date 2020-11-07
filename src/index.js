@@ -10,6 +10,7 @@ import { colors } from './dataConst';
 // console.log(stopButton);
 console.log(colors);
 
+
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -19,3 +20,5 @@ startButton.addEventListener('click', setStart);
 function setStart(event) {
     
 }
+
+console.log(colors[randomIntegerFromInterval(0, colors.length-1)]);
