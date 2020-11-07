@@ -32,7 +32,7 @@ function setStart(event) {
 
 function setStop(event) {
     clearInterval(timerId);
-    // startButton.addEventListener('click', setStart);
+    startButton.addEventListener('click', setStart);
 }
 
 
