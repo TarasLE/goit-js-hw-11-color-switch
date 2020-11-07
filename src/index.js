@@ -16,19 +16,19 @@ const randomIntegerFromInterval = (min, max) => {
 };
 
 const startPosition = startButton.addEventListener('click', setStart);
-const stopPosition = stopButton.addEventListener('click', setStop);
+stopButton.addEventListener('click', setStop);
+let timerId
 
 function setStart(event) {
     if (startPosition) {
        startButton.removeEventListener('click', setStart)
     }
     
-    const timerId =  setInterval(() => {
+    timerId =  setInterval(() => {
         const currentColor = randomIntegerFromInterval(0, colors.length - 1);
         document.body.style.background = colors[currentColor];
     }, 1000);
 
-    console.log("AFTER INTERVAL");
 }
 
 function setStop(event) {
