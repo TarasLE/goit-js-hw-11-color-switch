@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QfWi:function(t,o,n){"use strict";n.r(o);var e=document.querySelector('button[data-action="start"]');document.querySelector('button[data-action="stop"]');console.log(["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"]);e.addEventListener("click",(function(t){}))}},[["QfWi",1]]]);
-//# sourceMappingURL=main.401a312ccb80aa562177.js.map
