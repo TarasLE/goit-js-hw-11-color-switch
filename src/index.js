@@ -15,13 +15,13 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-startButton.addEventListener('click', setStart);
+const startPosition = startButton.addEventListener('click', setStart);
 const stopPosition = stopButton.addEventListener('click', setStop);
 
 function setStart(event) {
-    // if (stopPosition) {
-    //     setStop();
-    // }
+    if (startPosition) {
+       startButton.removeEventListener('click', setStart)
+    }
     
     const timerId =  setInterval(() => {
         const currentColor = randomIntegerFromInterval(0, colors.length - 1);
@@ -31,6 +31,7 @@ function setStart(event) {
 
 function setStop(event) {
     clearInterval(timerId);
+    startButton.addEventListener('click', setStart);
 }
 
 
