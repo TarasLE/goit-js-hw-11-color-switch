@@ -21,7 +21,8 @@ let timerId
 
 function setStart(event) {
     if (startPosition) {
-       startButton.removeEventListener('click', setStart, false)
+        startButton.removeEventListener('click', setStart);
+        startPosition = false;
     }
     
     timerId =  setInterval(() => {
@@ -33,7 +34,7 @@ function setStart(event) {
 
 function setStop(event) {
     clearInterval(timerId);
-    startButton.addEventListener('click', setStart, true);
+    startButton.addEventListener('click', setStart);
 }
 
 
