@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./index.js"],"names":["document","body","style","background"],"mappings":"kHAAA,iBAEAA,SAASC,KAAKC,MAAMC,WAAa,Y","file":"main.c6fa85fc84d413733714.js","sourcesContent":["import './styles.css';\n\ndocument.body.style.background = '#2196F3';"],"sourceRoot":""}
