@@ -15,7 +15,7 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-const startPosition = startButton.addEventListener('click', setStart);
+let startPosition = startButton.addEventListener('click', setStart);
 stopButton.addEventListener('click', setStop);
 let timerId
 
